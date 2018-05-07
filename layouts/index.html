@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <p class="description">
+  {{ safeHTML .Site.Params.description }}
+  </p>
+  <section>
+    <h3>Latest Blog Post</h3>
+    <ul>
+      {{ range first 5 (where .Data.Pages "Type" "posts") }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span>{{ dateFormat "Jan  02, 2006" .Date }}</span></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

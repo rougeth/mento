@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marco Rougeth</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+  <style>
+    body {
+      margin: 20px;
+      font-family: 'Noto Serif', serif;
+    }
+
+    a {
+      color: #1400ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      font-size: 20px;
+      margin: 4px;
+    }
+    nav a:first-child {
+      margin-left: 0;
+    }
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav .rgth {
+      font-weight: bold;
+    }
+
+    li span {
+      margin-left: 6px;
+      color: rgba(0, 0, 0, .5);
+    }
+
+    p {
+      line-height: 26px;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        max-width: 700px;
+      }
+
+      footer {
+        opacity: .5;
+        transition: opacity .3s ease;
+        -moz-transition: opacity .3s ease;
+        -webkit-transition: opacity .3s ease;
+        -o-transition: opacity .3s ease;
+      }
+
+      footer:hover {
+        opacity: 1;
+        transition: opacity .3s ease;
+        -moz-transition: opacity .3s ease;
+        -webkit-transition: opacity .3s ease;
+        -o-transition: opacity .3s ease;
+      }
+
+      .glider {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 10px;
+      }
+      
+      .g {
+
+        background: #b791fd;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        border: 2px solid #1400ff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="rgth">rgth</a>
+    <a href="#">blog</a>
+    <a href="#">projects</a>
+    <a href="#">about</a>
+  </nav>
+
+  <p class="description">
+    Welcome to my personal website! My name is <strong>Marco Rougeth</strong> and I'm a programmer, active member of the Brazilian Python Community and
+    Open Source enthusiast. Currently I'm part of an awesome team at <a href="#">Olist</a>.
+  </p>
+  
+  <section>
+    <h3>Latest Blog Posts</h3>
+    <ul>
+      <li><a href="">Creating a Django model instance in the past</a> <span>Mar 24, 2017</span></li>
+    </ul>
+  </section>
+  <a href="http://www.catb.org/hacker-emblem/">
+    <table class="glider">
+      <tr>
+        <td></td>
+        <td class="g"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="g"></td>
+      </tr>
+      <tr>
+        <td class="g"></td>
+        <td class="g"></td>
+        <td class="g"></td>
+      </tr>
+    </table>
+  </a>
+
+  <footer>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.</footer>
+</body>
+</html>

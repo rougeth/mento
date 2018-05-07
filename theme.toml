@@ -1,0 +1,14 @@
+name = "Mento"
+license = "MIT"
+licenselink = "https://github.com/rougeth/mento/blob/master/LICENSE.md"
+description = ""
+homepage = "https://github.com/rougeth/mento"
+tags = []
+features = [
+  "syntax-highlighting"
+]
+min_version = "0.38"
+
+[author]
+  name = "Marco Rougeth"
+  homepage = "https://rgth.co"

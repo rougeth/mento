@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+  {{ block "title" . }}
+    {{ .Site.Title }}
+  {{ end }}
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="/" class="rgth">rgth</a>
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}">{{ .Identifier }}</a>
+    {{ end }}
+  </nav>
+
+  {{ block "main" . }}
+  {{ end }}
+
+  <footer>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.</footer>
+</body>
+</html>
