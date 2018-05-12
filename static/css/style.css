@@ -1,8 +1,9 @@
 body {
-  font-family: 'Merriweather', serif;
-  font-family: "Times New Roman", Times, serif;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
   margin: 20px;
-  font-size: 18px
 }
 
 a {
@@ -73,7 +74,7 @@ footer {
 }
 
 pre, code {
-  font-family: 'Fira Mono', monospace; 
+  font-family: 'Fira Mono', monospace;
 }
 
 @media (min-width: 1024px) {
