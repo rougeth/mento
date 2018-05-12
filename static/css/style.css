@@ -71,6 +71,7 @@ footer {
   margin: 30px 0 30px 0;
   background: #f9f9f9;
   font-size: 14px;
+  overflow-x: auto;
 }
 
 pre, code {
