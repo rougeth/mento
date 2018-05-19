@@ -8,7 +8,7 @@
     {{ .Site.Title }}
   {{ end }}
   </title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
   <link href="/css/normalize.css" rel="stylesheet">
@@ -19,7 +19,7 @@
   <nav>
     <a href="/" class="rgth">rgth</a>
     {{ range .Site.Menus.main }}
-    <a href="{{ .URL }}">{{ .Identifier }}</a>
+    <a href="{{ .URL }}">{{ .Title }}</a>
     {{ end }}
   </nav>
 

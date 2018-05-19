@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section>
+  <p>knowledge drops. Idea from <a href="">@vinta_knowledge</a> (:</p>
+  <ul>
+    {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span>{{ dateFormat "Jan  02, 2006" .Date }}</span></li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

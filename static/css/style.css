@@ -6,6 +6,11 @@ body {
   margin: 20px;
 }
 
+h1 {
+  font-weight: normal;
+  line-height: 1.1em;
+}
+
 a {
   color: #1400ff;
   text-decoration: none;

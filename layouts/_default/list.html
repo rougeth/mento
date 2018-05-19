@@ -1,7 +1,7 @@
 {{ define "main" }}
   <section>
     <ul>
-      {{ range where .Data.Pages "Type" "posts" }}
+      {{ range .Data.Pages }}
       <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span>{{ dateFormat "Jan  02, 2006" .Date }}</span></li>
       {{ end }}
     </ul>
